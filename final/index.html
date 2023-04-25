@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School Database</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+    <link rel="stylesheet" href="looks.css">
+</head>
+<body>
+	<h1>School Database</h1>
+	<form id="classesForm">
+		<label>Enter Class data:</label><br>
+		<label>Class Number:</label>
+		<input type="text" id="class-number"><br>
+		<label>Name:</label>
+		<input type="text" id="class-name"><br>
+		<label>Subject:</label>
+		<input type="text" id="class-subject"><br>
+		<label>Major:</label>
+		<input type="text" id="class-major"><br>
+        <label>Room:</label>
+		<input type="text" id="class-room"><br>
+		<label>Professor ID:</label>
+		<input type="number" id="class-prof-id"><br>
+		<label>Time:</label>
+		<input type="text" id="class-time"><br>
+		<label>Department:</label>
+		<input type="number" id="class-dept"><br>
+		<button id="add-class-data">Add Data</button>
+    </form>
+    <form id="facultyForm">
+		<label>Enter Faculty data:</label><br>
+		<label>Name:</label>
+		<input type="text" id="faculty-name"><br>
+		<label>Email:</label>
+		<input type="email" id="faculty-email"><br>
+		<label>SSN:</label>
+		<input type="text" id="faculty-ssn"><br>
+		<label>Department:</label>
+		<input type="number" id="faculty-dept"><br>
+        <label>Phone Number:</label>
+		<input type="text" id="faculty-phone"><br>
+		<label>Salary:</label>
+		<input type="email" id="faculty-salary"><br>
+		<label>Date of Birth:</label>
+		<input type="text" id="faculty-dob"><br>
+		<button id="add-faculty-data">Add Data</button>
+	</form>
+    <form id="studentForm">
+			<label>Enter student data:</label><br>
+		<label>ID:</label>
+		<input type="text" id="student-id"><br>
+		<label>Email:</label>
+		<input type="email" id="student-email"><br>
+		<label>Name:</label>
+		<input type="text" id="student-name"><br>
+		<label>Phone Number:</label>
+		<input type="number" id="student-phone"><br>
+        <label>Schedule:</label>
+		<input type="text" id="student-schedule"><br>
+		<label>Address:</label>
+		<input type="email" id="student-address"><br>
+		<label>Date of Birth:</label>
+		<input type="text" id="student-dob"><br>
+		<label>Year:</label>
+		<input type="number" id="student-year"><br>
+		<button id="add-student-data">Add Data</button>
+	</form>
+    <form id ="scheduleForm">
+        <label>Enter schedule data:</label><br>
+        <label>ID:</label>
+        <input type="text" id="schedule-id"><br>
+        <label>Class 1:</label>
+        <input type="email" id="class1"><br>
+        <label>Class 2:</label>
+        <input type="text" id="class2"><br>
+        <label>Class 3:</label>
+        <input type="number" id="class3"><br>
+        <label>Class 4:</label>
+        <input type="text" id="class4"><br>
+        <label>Class 5:</label>
+        <input type="email" id="class5"><br>
+        <label>Class 6:</label>
+        <input type="text" id="class6"><br>
+        <label>Class 7:</label>
+        <input type="number" id="class7"><br>
+        <button id="add-schedule">Add Data</button>
+    </form>
+    
+    <form id ="professorForm">
+        <label>Enter professor data:</label><br>
+        <label>SSN:</label>
+        <input type="text" id="professor-ssn"><br>
+        <label>Email:</label>
+        <input type="email" id="professor-email"><br>
+        <label>Name:</label>
+        <input type="text" id="professor-name"><br>
+        <label>Phone Number:</label>
+        <input type="number" id="professor-phone"><br>
+        <label>Department:</label>
+        <input type="text" id="professor-department"><br>
+        <label>Salary:</label>
+        <input type="email" id="professor-salary"><br>
+        <label>Date of Birth:</label>
+        <input type="text" id="professor-dob"><br>
+        <label>Schedule:</label>
+        <input type="number" id="professor-schedule"><br>
+        <button id="add-professor">Add Data</button>
+    </form>
+    
+    <form id ="departmentForm">
+        <label>Enter department data:</label><br>
+        <label>ID:</label>
+        <input type="text" id="department-id"><br>
+        <label>Name:</label>
+        <input type="email" id="department-name"><br>
+        <label>Head professor SSN:</label>
+        <input type="text" id="department-head"><br>
+        <label>Building:</label>
+        <input type="number" id="department-building"><br>
+        <button id="add-department">Add Data</button>
+    </form>
+    
+    <form id ="buildingForm">
+        <label>Enter building data:</label><br>
+        <label>ID:</label>
+        <input type="text" id="building-id"><br>
+        <label>Name:</label>
+        <input type="email" id="building-name"><br>
+        <label>Address:</label>
+        <input type="text" id="building-address"><br>
+        <label>Rooms:</label>
+        <input type="number" id="building-rooms"><br>
+        <button id="add-building">Add Data</button>
+    </form>
+    
+    <form id ="roomForm">
+        <label>Enter room data:</label><br>
+        <label>ID:</label>
+        <input type="text" id="room-id"><br>
+        <label>Location:</label>
+        <input type="email" id="room-location"><br>
+        <label>Building:</label>
+        <input type="text" id="room-building"><br>
+        <label>Type:</label>
+        <input type="number" id="room-type"><br>
+        <label>Schedule:</label>
+        <input type="text" id="room-schedule"><br>
+        <label>Professor:</label>
+        <input type="text" id="room-professor"><br>
+        <button id="add-room">Add Data</button>
+    </form>
+</body>
+</html>
