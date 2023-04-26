@@ -1,0 +1,13 @@
+<?php
+include('db_connect.php');
+
+function addFacultyData($facultyName, $facultyEmail, $facultySSN, $facultyDept, $facultyPhone, $facultySalary, $facultyDOB) {
+    global $conn;
+    $sql = "INSERT INTO Faculty VALUES ('$facultySSN', '$facultyName', '$facultyDept', '$facultyPhone','$facultyEmail',  '$facultySalary', '$facultyDOB')";
+    if ($conn->query($sql) === TRUE) {
+        return "New record created successfully";
+    } else {
+        return "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+?>

@@ -8,7 +8,17 @@
 </head>
 <body>
 	<h1>School Database</h1>
-	<form id="classesForm">
+    <div class="w3-bar w3-black">
+        <button onclick="openTab('classesForm')">Classes</button>
+        <button onclick="openTab('facultyForm')">Faculty</button>
+        <button onclick="openTab('studentForm')">Students</button>
+        <button onclick="openTab('scheduleForm')">Schedules</button>
+        <button onclick="openTab('professorForm')">Professors</button>
+        <button onclick="openTab('departmentForm')">Departments</button>
+        <button onclick="openTab('buildingForm')">Buildings</button>
+        <button onclick="openTab('roomForm')">Rooms</button>
+    </div>
+	<form id="classesForm" class="tabs" action="addClass.php" method="POST">
 		<label>Enter Class data:</label><br>
 		<label>Class Number:</label>
 		<input type="text" id="class-number"><br>
@@ -28,7 +38,7 @@
 		<input type="number" id="class-dept"><br>
 		<button id="add-class-data">Add Data</button>
     </form>
-    <form id="facultyForm">
+    <form id="facultyForm" class="tabs" style="display: none;" action="addFaculty" method="POST">
 		<label>Enter Faculty data:</label><br>
 		<label>Name:</label>
 		<input type="text" id="faculty-name"><br>
@@ -46,7 +56,7 @@
 		<input type="text" id="faculty-dob"><br>
 		<button id="add-faculty-data">Add Data</button>
 	</form>
-    <form id="studentForm">
+    <form id="studentForm" class="tabs" style="display: none;" action="addStudent.php" method="POST">
 			<label>Enter student data:</label><br>
 		<label>ID:</label>
 		<input type="text" id="student-id"><br>
@@ -66,7 +76,7 @@
 		<input type="number" id="student-year"><br>
 		<button id="add-student-data">Add Data</button>
 	</form>
-    <form id ="scheduleForm">
+    <form id ="scheduleForm" class="tabs" style="display: none;" action="addSchedule.php" method="POST">
         <label>Enter schedule data:</label><br>
         <label>ID:</label>
         <input type="text" id="schedule-id"><br>
@@ -87,7 +97,7 @@
         <button id="add-schedule">Add Data</button>
     </form>
     
-    <form id ="professorForm">
+    <form id ="professorForm" class="tabs" style="display: none;" action="addProfessor.php" method="POST">
         <label>Enter professor data:</label><br>
         <label>SSN:</label>
         <input type="text" id="professor-ssn"><br>
@@ -108,7 +118,7 @@
         <button id="add-professor">Add Data</button>
     </form>
     
-    <form id ="departmentForm">
+    <form id ="departmentForm" class="tabs" style="display: none;" action="addDepartment.php" method="POST">
         <label>Enter department data:</label><br>
         <label>ID:</label>
         <input type="text" id="department-id"><br>
@@ -121,7 +131,7 @@
         <button id="add-department">Add Data</button>
     </form>
     
-    <form id ="buildingForm">
+    <form id ="buildingForm" class="tabs" style="display: none;" action="addBuilding.php" method="POST">
         <label>Enter building data:</label><br>
         <label>ID:</label>
         <input type="text" id="building-id"><br>
@@ -134,7 +144,7 @@
         <button id="add-building">Add Data</button>
     </form>
     
-    <form id ="roomForm">
+    <form id ="roomForm" class="tabs" style="display: none;" action="addRoom.php" method="POST">
         <label>Enter room data:</label><br>
         <label>ID:</label>
         <input type="text" id="room-id"><br>
